@@ -20,19 +20,19 @@ $(function () {
   let slider = $("#reviewsSlider");
 
   slider.slick({
-    infinite: false,
-    slidesToShow: 2.5,
-    slidesToScroll: 1,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     dots: true,
     arrows: true
   });
 
-  let sliderr = $("#roomsSlider")
+  let sliderr = $("#roomsSlider");
 
   sliderr.slick({
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     dots: true,
     arrows: true
   });

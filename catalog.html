@@ -29,12 +29,26 @@
   </header>
 
   <div class="container">
-    <div class="catalog">
-      <div class="sidebar">
-        <div class="sidebar__title">
-          Наши номера
-        </div>
 
+    <div class="catalog__title">
+      <div class="sidebar__name">
+        Наши номера
+      </div>
+
+      <div class="select">
+        <select>
+          <option value="1">По площади</option>
+          <option value="2">По площади</option>
+          <option value="3">По цене</option>
+          <option value="4">По цене</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="catalog">
+
+      <div class="sidebar">
         <div class="sidebar__item">
           <div class="input__title">
             Цена за сутки, ₽
@@ -48,30 +62,27 @@
           <div class="input__title">
             Площадь
           </div>
-          <div class="input__size">
-            <input class="input__checked" type="text" name="" value=""> <span class="input__text">0,63 м2</span>
-            <br><input class="input__checked" type="text" name="" value=""> <span class="input__text">0,90 м2</span>
-            <br><input class="input__checked" type="text" name="" value=""> <span class="input__text">1,13 м2</span>
-            <br><input class="input__checked" type="text" name="" value=""> <span class="input__text">1,56 м2</span>
-            <br><input class="input__checked" type="text" name="" value=""> <span class="input__text">2,56 м2</span>
-            <br><input class="input__checked" type="text" name="" value=""> <span class="input__text">2,88 м2</span>
-          </div>
+          <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox_1"><label class="checkbox__label" for="checkbox_1">0,63 м2</label></div>
+          <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox_2"><label class="checkbox__label" for="checkbox_2">0,90 м2</label></div>
+          <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox_3"><label class="checkbox__label" for="checkbox_3">1,13 м2</label></div>
+          <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox_4"><label class="checkbox__label" for="checkbox_4">1,56 м2</label></div>
+          <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox_5"><label class="checkbox__label" for="checkbox_5">2,56 м2</label></div>
+          <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox_6"><label class="checkbox__label" for="checkbox_6">2,88 м2</label></div>
         </div>
 
         <div class="sidebar__item">
           <div class="input__title">
             Оснащение номера
           </div>
-          <div class="input__size">
-            <input class="input__checked" type="text" name="" value=""> <span class="input__text">Пустой номер</span>
-            <br><input class="input__checked" type="text" name="" value=""> <span class="input__text">Лежак</span>
-            <br><input class="input__checked" type="text" name="" value=""> <span class="input__text">Когтеточка</span>
-            <br><input class="input__checked" type="text" name="" value=""> <span class="input__text">Игровой-комплекс</span>
-            <br><input class="input__checked" type="text" name="" value=""> <span class="input__text">Домик</span>
-          </div>
+          <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox_7"><label class="checkbox__label" for="checkbox_7">Пустой номер</label></div>
+          <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox_8"><label class="checkbox__label" for="checkbox_8">Лежак</label></div>
+          <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox_9"><label class="checkbox__label" for="checkbox_9">Когтеточка</label></div>
+          <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox_10"><label class="checkbox__label" for="checkbox_10">Игровой-комплекс</label></div>
+          <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox_11"><label class="checkbox__label" for="checkbox_11">Домик</label></div>
         </div>
 
-        <a class="btn btn--filtr" href="#">Сбросить фильтр</a>
+        <button class="btn btn--filtr" href="#">Сбросить фильтр</button>
+
       </div>
 
       <div class="catalog__inner">
@@ -263,33 +274,31 @@
       </div>
     </div>
     <div class="contacts__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1232.0590126427649!2d30.321477808424277!3d59.9388180342906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1584015203996!5m2!1sru!2sru" width="911" height="592" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1232.0590126427649!2d30.321477808424277!3d59.9388180342906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1584015203996!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
   </div>
 </body>
 
 <footer>
-
-  <header class="header">
-    <div class="header__footer">
-      <div class="header__logo" data-scroll="#intro">
-        <img src="img/hotelcats-logo.png" alt="">
-      </div>
-      <nav class="nav" id="nav">
-        <a class="nav__link" href="#" data-scroll="#why">Почему мы?</a>
-        <a class="nav__link" href="#" data-scroll="#rooms">Номера</a>
-        <a class="nav__link" href="#" data-scroll="#reviews">Отзывы</a>
-        <a class="nav__link" href="#" data-scroll="#contacts">Как нас найти</a>
-      </nav>
+  <div class="footer">
+    <div class="header__logo" data-scroll="#intro">
+      <img src="img/hotelcats-logo.png" alt="">
     </div>
+    <nav class="nav" id="nav">
+      <a class="nav__link" href="#" data-scroll="#why">Почему мы?</a>
+      <a class="nav__link" href="#" data-scroll="#rooms">Номера</a>
+      <a class="nav__link" href="#" data-scroll="#reviews">Отзывы</a>
+      <a class="nav__link" href="#" data-scroll="#contacts">Как нас найти</a>
+    </nav>
+  </div>
 
-    <hr>
+  <hr>
 
-    <div class="copyright">
-      <div class="copyright__text">
-        <div>2019 Все права защищены</div><div>Политика конфиденциальности</div>
-      </div>
+  <div class="copyright">
+    <div class="copyright__text">
+      <div>2019 Все права защищены</div><div>Политика конфиденциальности</div>
     </div>
-  </header>
+  </div>
 </footer>
+
 </html>
