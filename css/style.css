@@ -89,6 +89,9 @@ hr {
 }
 
 .nav__link {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
   margin: 0 30px;
   color: #1A212F;
   text-decoration: none;
@@ -103,6 +106,82 @@ hr {
   color: #FF7236;
 }
 
+.telephone__num {
+  display: none;
+}
+
+.social-nav {
+  display: none;
+}
+
+/* Nav-toggle */
+
+.nav-toggle {
+  width: 30px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 1;
+  padding: 10px 0;
+  font-size: 0;
+  color: transparent;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-toggle:focus {
+  outline: 0;
+}
+
+.nav-toggle__item {
+  width: 100%;
+  height: 3px;
+  background-color: #1A212F;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transition: background .2s linear;
+}
+
+.nav-toggle.active .nav-toggle__item {
+  background: none;
+}
+
+.nav-toggle__item::before,
+.nav-toggle__item::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background-color: #1A212F;
+  left: 0;
+  z-index: 1;
+  transition: transform .2s linear;
+}
+
+.nav-toggle__item::before {
+  top: -8px;
+}
+
+.nav-toggle__item::after {
+  bottom: -8px;
+}
+
+.nav-toggle.active .nav-toggle__item::before {
+  transform-origin: left top;
+  transform: rotate(45deg) translate3d(0px, -2px, 0);
+}
+
+.nav-toggle.active .nav-toggle__item::after {
+  transform-origin: left bottom;
+  transform: rotate(-45deg) translate3d(0px, 3px, 0);
+}
 
 /* Button */
 
@@ -316,13 +395,18 @@ hr {
 /* Social */
 
 .social {
-  display: flex;;
+  display: flex;
+  margin-left: -5px;
 }
 
 .social__icon {
   width: 22px;
   height: 22px;
   margin-left: 5px;
+  text-decoration: none;
+}
+
+.social__icon a {
   text-decoration: none;
 }
 
@@ -434,8 +518,10 @@ hr {
 @media (max-width: 575px) {
 
   .container {
-    max-width: 271px;
     width: 100%;
+  }
+
+  .header__inner {
     margin: 0 15px;
   }
 
@@ -444,29 +530,84 @@ hr {
     top: 30px;
   }
 
-  .nav__link {
+  .nav {
     display: none;
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 100%;
     left: 0;
-    background-color: #eb8b8d;
+    background-color: #FAC663;
+  }
+
+  .nav.active {
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .nav__link {
+    display: block;
+    margin: 0;
+    padding: 8px 20px;
+  }
+
+  .telephone__num {
+    display: block;
+    font-size: 16px;
+    margin: 0;
+    padding: 8px 20px;
+  }
+
+  .social-nav {
+    display: block;
+    margin: 0;
+    padding: 8px 14px;
+  }
+
+  .intro {
+    height: 100vh;
+    background: url("../img/mobile/bg.jpg") center no-repeat;
+    -webkit-background-size: cover;
+  }
+
+  .intro__inner {
+    margin: 23%;
+    text-align: center;
   }
 
   .intro__suptitle {
-    font-size: 13px;
-  }
-
-  .intro__title {
-    font-size: 48px
-  }
-
-  .intro__subtitle {
     font-size: 14px;
   }
 
+  .intro__title {
+    font-size: 44px;
+  }
+
+  .intro__subtitle {
+    font-size: 16px;
+  }
+
   .services__item {
-    width: 82%;
+    width: 100%;
+    margin: 15px 15px;
+  }
+
+  .reviews__inner {
+    margin: 0 auto;
+  }
+
+  .reviews__item {
+    width: 290px;
+    margin: 30px 6px;
+  }
+
+  .reviews__content {
+    font-size: 15px;
+  }
+
+  .reviws__footer {
+    display: none;
   }
 
   .contacts {
@@ -475,15 +616,21 @@ hr {
 
   .contacts__inner {
     width: 100%;
-    text-align: center;
+    padding: 30px;
   }
 
-  .contacts__title {
-    text-align: center;
+  .contacts__map {
+    width: 100%;
+    height: 495px;
   }
 
-  .social {
-    justify-content: center;
+  .footer {
+    margin: 15px;
+  }
+
+  .copyright__text {
+    margin: 16px;
+    display: block;
   }
 
 }
@@ -606,6 +753,10 @@ hr {
   transition: color .2s linear;
 }
 
+.catalog__filtr {
+  display: none;
+}
+
 /* Input */
 
 .input__title {
@@ -667,12 +818,11 @@ hr {
   margin-top: 100px;
 }
 
-.banner__img {
-  position: absolute;
-}
-
 .banner__inner {
   display: flex;
+  background: url('../img/catalog/free.jpg') center no-repeat;
+  -webkit-background-size: cover;
+  height: 378px;
 }
 
 .banner__content {
@@ -696,4 +846,154 @@ hr {
 
 .banner__text {
   font-size: 16px;
+}
+
+/* Media */
+
+@media (max-width: 575px) {
+
+  .catalog__filtr {
+    display: block;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .catalog__title {
+    display: block;
+    margin-left: 35px;
+  }
+
+  .catalog__inner {
+    width: auto;
+  }
+
+  .catalog__item {
+    margin: 0 auto;
+  }
+
+  .banner__inner {
+    background: url('../img/mobile/free.jpg') center no-repeat;
+    -webkit-background-size: cover;
+    height: 825px;
+  }
+
+  .banner__content {
+    text-align: center;
+    margin: 60px auto;
+  }
+
+  .banner__title {
+    font-size: 24px;
+  }
+
+  .banner__subtitle {
+    font-size: 37px;
+  }
+
+}
+
+/* Card Rooms */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.value {
+  margin-left: 70px;
+}
+
+.cards__name {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.cards__text {
+  font-size: 16px;
+}
+
+/* Form */
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form__inner {
+  max-width: 570px;
+  height: 649px;
+}
+
+.form__item {
+  background-color: #fff;
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 10px;
+  padding: 55px;
+}
+
+.form__title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  width: 100%;  
+  padding: 0 20px;
+  height: 52px;
+  margin-bottom: 15px;
+  border: 1px solid #D7D7D7;
+  border-radius: 25px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  outline: 0;
+}
+
+.form__input.date {
+  width: 129px;
+  margin: 0 18px;
+}
+
+.form__input.date:last-child {
+  margin-right: 0;
+}
+
+.form__submit {
+  width: 230px;
+  height: 50px;
+  margin: 40px auto;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  border: 0;
+  border-radius: 25px;
+  background: #FF7236;
+  box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+  cursor: pointer;
+  outline: 0;
+}
+
+/* Media */
+
+@media (max-width: 575px) {
+
+}
+
+.form__input.date {
+  display: block;
+  width: 100%;
+  margin: 6px 0;
 }

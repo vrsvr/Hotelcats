@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Rubik:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/39d87d6a5b.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <title>Rooms</title>
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo" data-scroll="#intro">
+          <img src="img/hotelcats-logo.png" alt="">
+        </div>
+        <nav class="nav" id="nav">
+          <a class="nav__link" href="#" data-scroll="#why">Почему мы?</a>
+          <a class="nav__link" href="#" data-scroll="#rooms">Номера</a>
+          <a class="nav__link" href="#" data-scroll="#reviews">Отзывы</a>
+          <a class="nav__link" href="#" data-scroll="#contacts">Как нас найти</a>
+          <span class="telephone__num">8 (800) 333-55-99</span>
+          <div class="social-nav">
+            <span class="social__icon">
+              <a href="#" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </span>
+            <span class="social__icon">
+              <a href="#" target="_blank">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </span>
+            <span class="social__icon">
+              <a href="#" target="_blank">
+                <i class="fab fa-vk"></i>
+              </a>
+            </span>
+          </div>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle" type="button">
+          <span class="nav-toggle__item">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <div class="cards">
+      <div class="card__img">
+        <img src="img/cards/1.jpg" alt="">
+      </div>
+      <div class="value">
+        <div class="cards__name">
+          Супер-Люкс
+        </div>
+        <div class="cards__value">
+          <span class="cards__text">Размеры (ШхГхВ) - 180х160х180 см</span>
+          <br><span class="cards__text">Площадь - 2,88 м2</span>
+          <br><span class="cards__text">Оснащение номера</span>
+          <br><img class="value__img" src="img/catalog/value/1.png" alt=""> <span class="cards__text">Лежак</span>
+          <br><img class="value__img" src="img/catalog/value/4.png" alt=""> <span class="cards__text">Домик</span>
+          <br><img class="value__img" src="img/catalog/value/3.png" alt=""> <span class="cards__text">Игровой комплекс - 3 яруса</span>
+          <br><img class="value__img" src="img/catalog/value/2.png" alt=""> <span class="cards__text">Когтеточка</span>
+          <br><span class="cards__text">Цена за сутки:</span> <span class="value__price">600₽</span>
+          <br><a class="btn btn--orange" href="#">Забронировать <img class="btn__img" src="img/btn/btn--orange.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section__title" id="rooms">
+      Другие номера
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="rooms" id="roomsSlider">
+      <div>
+        <div class="rooms__item">
+          <img class="rooms__img" src="img/rooms/1.png" alt="">
+          <div class="rooms__menu">
+            <div class="rooms__name">
+              Эконом плюс
+            </div>
+            <div class="rooms__value">
+              <ul>
+                <li><span>Площадь - 0,90 м2</span></li>
+                <li><span>Размеры (ШхГхВ) — 90х100х180 см</span></li>
+                <li><span>Цена за сутки: 200₽</span></li>
+              </ul>
+            </div>
+            <a class="btn btn--orange" href="#">Забронировать <img class="btn__img" src="img/btn/btn--orange.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="rooms__item">
+          <img class="rooms__img" src="img/rooms/2.png" alt="">
+          <div class="rooms__menu">
+            <div class="rooms__name">
+              Комфорт
+            </div>
+            <div class="rooms__value">
+              <ul>
+                <li><span>Площадь - 1,13 м2</span></li>
+                <li><span>Размеры (ШхГхВ) - 100х125х180 см</span></li>
+                <li><span>Цена за сутки: 250₽</span></li>
+              </ul>
+            </div>
+            <a class="btn btn--orange" href="#">Забронировать <img class="btn__img" src="img/btn/btn--orange.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="rooms__item">
+          <img class="rooms__img" src="img/rooms/3.png" alt="">
+          <div class="rooms__menu">
+            <div class="rooms__name">
+              Сьют
+            </div>
+            <div class="rooms__value">
+              <ul>
+                <li><span>Площадь - 1,56 м2</span></li>
+                <li><span>Размеры (ШхГхВ) - 125х125х180 см</span></li>
+                <li><span>Цена за сутки: 350₽</span></li>
+              </ul>
+            </div>
+            <a class="btn btn--orange" href="#">Забронировать <img class="btn__img" src="img/btn/btn--orange.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contacts" id="contacts">
+    <div class="contacts__inner">
+      <div class="contacts__maintitle" id="contacts">
+        Как нас найти
+      </div>
+      <div class="contacts__title">
+        Адрес
+      </div>
+      <div class="contacts__text">
+        Санкт-Петербург,
+        <br>ул Большая Конюшенная, д 19
+      </div>
+
+      <div class="contacts__title">
+        Режим работы
+      </div>
+      <div class="contacts__text">
+        Ежедневно, с 9:00 до 20:00
+      </div>
+
+      <div class="contacts__title">
+        Телефон
+      </div>
+      <div class="contacts__text">
+        8 (800) 333-55-99
+      </div>
+
+      <div class="contacts__title">
+        E-mail
+      </div>
+      <div class="contacts__text">
+        info@cat-hotel.ru
+      </div>
+
+      <div class="contacts__icon">
+        <div class="contacts__title">
+          Социальные сети
+        </div>
+        <div class="social">
+          <div class="social__icon">
+            <a href="#" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+          <div class="social__icon">
+            <a href="#" target="_blank">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+          </div>
+          <div class="social__icon">
+            <a href="#" target="_blank">
+              <i class="fab fa-vk"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contacts__map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1232.0590126427649!2d30.321477808424277!3d59.9388180342906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1584015203996!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+  </div>
+</body>
+
+<footer>
+  <div class="footer">
+    <div class="header__logo" data-scroll="#intro">
+      <img src="img/hotelcats-logo.png" alt="">
+    </div>
+    <nav class="nav" id="nav">
+      <a class="nav__link" href="#" data-scroll="#why">Почему мы?</a>
+      <a class="nav__link" href="#" data-scroll="#rooms">Номера</a>
+      <a class="nav__link" href="#" data-scroll="#reviews">Отзывы</a>
+      <a class="nav__link" href="#" data-scroll="#contacts">Как нас найти</a>
+    </nav>
+  </div>
+
+  <hr>
+
+  <div class="copyright">
+    <div class="copyright__text">
+      <div>2019 Все права защищены</div><div>Политика конфиденциальности</div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/app.js"></script>
+
+</html>
