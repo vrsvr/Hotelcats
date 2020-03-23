@@ -18,6 +18,7 @@
           <img src="img/hotelcats-logo.png" alt="">
         </div>
         <nav class="nav" id="nav">
+          <img class="nav__img" src="img/hotelcats-logo.png" alt="">
           <a class="nav__link" href="#" data-scroll="#why">Почему мы?</a>
           <a class="nav__link" href="#" data-scroll="#rooms">Номера</a>
           <a class="nav__link" href="#" data-scroll="#reviews">Отзывы</a>
@@ -54,27 +55,29 @@
       <div class="sidebar__name">
         Наши номера
       </div>
-
-      <div>
-        <button class="catalog__filtr">
-
-        </button>
-      </div>
-
-      <div class="select">
-        <select>
-          <option value="1">По площади</option>
-          <option value="2">По площади</option>
-          <option value="3">По цене</option>
-          <option value="4">По цене</option>
-        </select>
-      </div>
-
     </div>
+
+<div class="catalog__btn">
+  <div>
+    <button class="catalog__filtr">
+      Фильтры
+    </button>
+  </div>
+
+  <div class="select">
+    <select>
+      <option value="1">По площади</option>
+      <option value="2">По площади</option>
+      <option value="3">По цене</option>
+      <option value="4">По цене</option>
+    </select>
+  </div>
+</div>
 
     <div class="catalog">
 
       <div class="sidebar">
+        <span class="close"></span>
         <div class="sidebar__item">
           <div class="input__title">
             Цена за сутки, ₽
@@ -107,6 +110,8 @@
           <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox_11"><label class="checkbox__label" for="checkbox_11">Домик</label></div>
         </div>
 
+        <button class="btn btn--pickup" href="#">Подобрать</button>
+
         <button class="btn btn--filtr" href="#">Сбросить фильтр</button>
 
       </div>
@@ -122,7 +127,7 @@
             <div class="catalog__value">
               <span class="value__text">Размеры (ШхГхВ) - 90х70х180 см</span>
               <br><span class="value__text">Площадь - 0,63 м2</span>
-              <br><span class="value__text">Оснащение номера</span><img class="value__img" src="img/catalog/value/none.png" alt="">
+              <br><span class="value__text">Оснащение номера</span><img class="value__img" src="img/catalog/value/none.png" alt="" title="Пустой номер">
               <br><span class="value__text">Цена за сутки:</span><span class="value__price">100₽</span>
 
               <br><a class="btn btn--orange" href="#">Забронировать <img class="btn__img" src="img/btn/btn--orange.png" alt=""></a>
@@ -139,7 +144,7 @@
             <div class="catalog__value">
               <span class="value__text">Размеры (ШхГхВ) - 90х100х180 см</span>
               <br><span class="value__text">Площадь - 0,90 м2</span>
-              <br><span class="value__text">Оснащение номера</span><img class="value__img" src="img/catalog/value/1.png" alt=""><img class="value__img" src="img/catalog/value/2.png" alt="">
+              <br><span class="value__text">Оснащение номера</span><img class="value__img" src="img/catalog/value/1.png" alt="" title="Лежак"><img class="value__img" src="img/catalog/value/2.png" alt="" title="Когтеточка">
               <br><span class="value__text">Цена за сутки:</span><span class="value__price">200₽</span>
 
               <br><a class="btn btn--orange" href="#">Забронировать <img class="btn__img" src="img/btn/btn--orange.png" alt=""></a>
@@ -156,7 +161,7 @@
             <div class="catalog__value">
               <span class="value__text">Размеры (ШхГхВ) - 100х125х180 см</span>
               <br><span class="value__text">Площадь - 1,13 м2</span>
-              <br><span class="value__text">Оснащение номера</span><img class="value__img" src="img/catalog/value/1.png" alt=""><img class="value__img" src="img/catalog/value/2.png" alt=""><img class="value__img" src="img/catalog/value/3.png" alt="">
+              <br><span class="value__text">Оснащение номера</span><img class="value__img" src="img/catalog/value/1.png" alt="" title="Лежак"><img class="value__img" src="img/catalog/value/2.png" alt="" title="Когтеточка"><img class="value__img" src="img/catalog/value/3.png" alt="" title="Игровой - комплекс">
               <br><span class="value__text">Цена за сутки:</span><span class="value__price">250₽</span>
 
               <br><a class="btn btn--orange" href="#">Забронировать <img class="btn__img" src="img/btn/btn--orange.png" alt=""></a>
@@ -173,7 +178,7 @@
             <div class="catalog__value">
               <span class="value__text">Размеры (ШхГхВ) - 125х125х180 см</span>
               <br><span class="value__text">Площадь - 1,56 м2</span>
-              <br><span class="value__text">Оснащение номера</span><img class="value__img" src="img/catalog/value/1.png" alt=""><img class="value__img" src="img/catalog/value/2.png" alt=""><img class="value__img" src="img/catalog/value/3.png" alt="">
+              <br><span class="value__text">Оснащение номера</span><img class="value__img" src="img/catalog/value/1.png" alt=""title="Лежак"><img class="value__img" src="img/catalog/value/2.png" alt="" title="Когтеточка"><img class="value__img" src="img/catalog/value/3.png" alt="" title="Игровой - комплекс">
               <br><span class="value__text">Цена за сутки:</span><span class="value__price">350₽</span>
 
               <br><a class="btn btn--orange" href="#">Забронировать <img class="btn__img" src="img/btn/btn--orange.png" alt=""></a>
@@ -190,7 +195,7 @@
             <div class="catalog__value">
               <span class="value__text">Размеры (ШхГхВ) - 160х160х180 см</span>
               <br><span class="value__text">Площадь - 2,56 м2</span>
-              <br><span class="value__text">Оснащение номера</span><img class="value__img" src="img/catalog/value/1.png" alt=""><img class="value__img" src="img/catalog/value/2.png" alt=""><img class="value__img" src="img/catalog/value/3.png" alt=""><img class="value__img" src="img/catalog/value/4.png" alt="">
+              <br><span class="value__text">Оснащение номера</span><img class="value__img" src="img/catalog/value/1.png" alt="" title=Лежак><img class="value__img" src="img/catalog/value/2.png" alt="" title="Когтеточка"><img class="value__img" src="img/catalog/value/3.png" alt="" title="Игровой - комплекс"><img class="value__img" src="img/catalog/value/4.png" alt="" title="Домик">
               <br><span class="value__text">Цена за сутки:</span><span class="value__price">500₽</span>
 
               <br><a class="btn btn--orange" href="#">Забронировать <img class="btn__img" src="img/btn/btn--orange.png" alt=""></a>
@@ -207,7 +212,7 @@
             <div class="catalog__value">
               <span class="value__text">Размеры (ШхГхВ) - 180х160х180 см</span>
               <br><span class="value__text">Площадь - 2,88 м2</span>
-              <br><span class="value__text">Оснащение номера</span><img class="value__img" src="img/catalog/value/1.png" alt=""><img class="value__img" src="img/catalog/value/2.png" alt=""><img class="value__img" src="img/catalog/value/3.png" alt=""><img class="value__img" src="img/catalog/value/4.png" alt="">
+              <br><span class="value__text">Оснащение номера</span><img class="value__img" src="img/catalog/value/1.png" alt="" title=Лежак><img class="value__img" src="img/catalog/value/2.png" alt="" title="Когтеточка"><img class="value__img" src="img/catalog/value/3.png" alt="" title="Игровой - комплекс"><img class="value__img" src="img/catalog/value/4.png" alt="" title="Домик">
               <br><span class="value__text">Цена за сутки:</span><span class="value__price">600₽</span>
 
               <br><a class="btn btn--orange" href="#">Забронировать <img class="btn__img" src="img/btn/btn--orange.png" alt=""></a>
@@ -308,10 +313,14 @@
       <img src="img/hotelcats-logo.png" alt="">
     </div>
     <nav class="nav" id="nav">
-      <a class="nav__link" href="#" data-scroll="#why">Почему мы?</a>
-      <a class="nav__link" href="#" data-scroll="#rooms">Номера</a>
-      <a class="nav__link" href="#" data-scroll="#reviews">Отзывы</a>
-      <a class="nav__link" href="#" data-scroll="#contacts">Как нас найти</a>
+      <div>
+        <a class="nav__link" href="#" data-scroll="#why">Почему мы?</a>
+        <a class="nav__link" href="#" data-scroll="#rooms">Номера</a>
+      </div>
+      <div>
+        <a class="nav__link" href="#" data-scroll="#reviews">Отзывы</a>
+        <a class="nav__link" href="#" data-scroll="#contacts">Как нас найти</a>
+      </div>
     </nav>
   </div>
 
