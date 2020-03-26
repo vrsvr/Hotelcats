@@ -358,47 +358,34 @@ hr {
 
 .reviews {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .reviews__inner {
-    width: 60%;
-    margin-right: 30px;
-}
-
-.reviews__item {
-    width: 470px;
-    height: auto;
-    margin: 30px 30px;
+    width: 86%;
+    background: #FFFFFF;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
     border-radius: 8px;
-}
-
-.reviews__content {
-    padding: 30px 55px;
+    padding: 20px 20px 20px 45px;
 }
 
 .reviews__text {
     position: relative;
-    font-style: normal;
-    font-weight: 500;
+    margin: 25px 0;
 }
 
 .reviews__text::before {
     content: "";
     position: absolute;
-    background: url("../img/quote-img.png") center no-repeat;
     width: 27px;
     height: 56px;
-    top: -12px;
-    left: -33px;
+    top: -15px;
+    left: -30px;
+    background: url("/img/quote-img.png") center no-repeat;
 }
 
-.reviws__footer {
+.reviews__footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    font-weight: normal;
     font-size: 14px;
     color: #848484;
 }
@@ -490,6 +477,10 @@ hr {
 
 .slick-slide {
     outline: none
+}
+
+.slick-list.draggable {
+    padding: 30px 0;
 }
 
 .slick-dots {
@@ -657,16 +648,6 @@ hr {
     .rooms__menu {
         position: inherit;
         padding: 25px;
-    }
-    .reviews__inner {
-        margin: 0;
-    }
-    .reviews__item {
-        width: 290px;
-        margin: 0 6px;
-    }
-    .reviews__content {
-        font-size: 15px;
     }
     .reviws__footer {
         display: none;
