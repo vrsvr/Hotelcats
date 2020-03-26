@@ -1,11 +1,12 @@
-$(function () {
-
-
-  let header = $("#header");
-  let introH = $("#intro").innerHeight(),
-  scrollOffset = $(window).scrollTop();
-  let nav = $("#nav");
-  let navToggle = $("#navToggle");
+$(() => {
+  const navOpen = $('#nav-toggle');
+  const mobMenu = $('#mob-menu');
+  
+  navOpen.click(function() {
+    navOpen.toggleClass('active');
+    mobMenu.toggleClass('active');
+    $('body').toggleClass('active');
+  });
 
   $("[data-scroll]").on("click", function(event) {
     event.preventDefault();
@@ -24,21 +25,6 @@ $(function () {
     }, 600)
   });
 
-  $("#nav-toggle").on("click", function(event) {
-    event.preventDefault();
-
-    $(this).toggleClass("active");
-    $("nav").toggleClass("active");
-  });
-
-  $("[data-collapse]").on("click", function(event) {
-    event.preventDefault();
-
-    let $this = $(this);
-    let elementId = $(this).data('collapse');
-    $this.toggleClass('active');
-  });
-
   let slider = $("#reviewsSlider");
 
   slider.slick({
@@ -54,7 +40,6 @@ $(function () {
       slidesToScroll: 1,
       centerMode: true,
       arrows: false,
-      centerPadding: '-30px'
     }
   }]
   });
@@ -78,5 +63,6 @@ $(function () {
     }
   }]
   });
+
 
 });
