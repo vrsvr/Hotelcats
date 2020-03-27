@@ -1,68 +1,78 @@
 $(() => {
-  const navOpen = $('#nav-toggle');
-  const mobMenu = $('#mob-menu');
-  
-  navOpen.click(function() {
-    navOpen.toggleClass('active');
-    mobMenu.toggleClass('active');
-    $('body').toggleClass('active');
-  });
+    const navOpen = $('#nav-toggle');
+    const mobMenu = $('#mob-menu');
+    const mobSidebar = $('#mob-sidebar');
+    const mobFilter = $('#mob-filter');
+    const close = $('#close');
 
-  $("[data-scroll]").on("click", function(event) {
-    event.preventDefault();
+    navOpen.click(function() {
+        navOpen.toggleClass('active');
+        mobMenu.toggleClass('active');
+        $('body').toggleClass('active');
+    });
 
-    let $this = $(this);
-    let elementId = $(this).data('scroll');
-    let elementOffset = $(elementId).offset().top;
+    mobFilter.click(function() {
+        mobSidebar.addClass('active');
+    });
 
-    $("nav, a").removeClass("active");
-    $this.addClass("active");
+    close.click(function() {
+        mobSidebar.removeClass('active');
+    });
 
-    $("#nav_toggle").removeClass("active");
+    $("[data-scroll]").on("click", function(event) {
+        event.preventDefault();
 
-    $("html, body").animate({
-      scrollTop: elementOffset - 30
-    }, 600)
-  });
+        let $this = $(this);
+        let elementId = $(this).data('scroll');
+        let elementOffset = $(elementId).offset().top;
 
-  let slider = $("#reviewsSlider");
+        $("nav, a").removeClass("active");
+        $this.addClass("active");
 
-  slider.slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    dots: true,
-    arrows: true,
-    responsive: [{
-    breakpoint:575,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      centerMode: true,
-      arrows: false,
-    }
-  }]
-  });
+        $("#nav_toggle").removeClass("active");
 
-  let sliderr = $("#roomsSlider");
+        $("html, body").animate({
+            scrollTop: elementOffset - 30
+        }, 600)
+    });
 
-  sliderr.slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: true,
-    responsive: [
-      {
-    breakpoint: 575,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      centerMode: true,
-      arrows: false
-    }
-  }]
-  });
+    let slider = $("#reviewsSlider");
+
+    slider.slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true,
+        arrows: true,
+        responsive: [{
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                arrows: false,
+            }
+        }]
+    });
+
+    let sliderr = $("#roomsSlider");
+
+    sliderr.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        responsive: [{
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                arrows: false
+            }
+        }]
+    });
 
 
 });
