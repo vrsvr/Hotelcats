@@ -712,9 +712,6 @@ hr {
 
 .select {
     position: relative;
-}
-
-.select select {
     display: block;
     background: none;
     border: 0;
@@ -725,6 +722,23 @@ hr {
     box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
     border-radius: 25px;
     padding: 8px 55px 8px 35px
+}
+
+.select__act {
+    margin-bottom: 10px;
+}
+
+.select__hidden {
+    margin-bottom: 10px;
+    display: none;
+}
+
+.select__hidden:last-child {
+    margin-bottom: 0;
+}
+
+.active .select__hidden {
+    display: block;
 }
 
 .select::after {
@@ -818,7 +832,7 @@ hr {
     padding: 10px 30px;
     width: 205px;
     border: 2px solid #FF7236;
-    transition: background .2s linear;
+    transition: background .2s linear, color .2s linear;
 }
 
 .btn--pickup:hover {
@@ -830,7 +844,7 @@ hr {
     width: max-content;
     border: 2px solid #FF7236;
     margin-top: 20px;
-    transition: color .2s linear;
+    transition: background .2s linear, color .2s linear;
 }
 
 .catalog__filtr {
@@ -908,12 +922,14 @@ hr {
     height: 14px;
     top: 0;
     right: 0;
+    cursor: pointer;
 }
 
 .close__form {
     display: block;
     top: 20px;
     right: 20px;
+    cursor: pointer;
 }
 
 .close:before,
@@ -986,18 +1002,13 @@ hr {
     .catalog__filtr {
         display: block;
         width: 122px;
+        height: 38.4px;
         background: none;
         border: 0;
         font-size: 14px;
         color: #1A212F;
         box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
         border-radius: 25px;
-        padding: 8px 35px;
-    }
-    .select {
-        width: 173px;
-    }
-    .select select {
         padding: 8px 35px;
     }
     .select::after {
@@ -1145,6 +1156,7 @@ hr {
 }
 
 .form__submit {
+    display: block;
     width: 230px;
     height: 50px;
     margin: 40px auto;

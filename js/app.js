@@ -4,6 +4,8 @@ $(() => {
     const mobSidebar = $('#mob-sidebar');
     const mobFilter = $('#mob-filter');
     const close = $('#close');
+    const selectOpen = $('#select-open');
+    const selectActive = $('#select-active');
 
     navOpen.click(function() {
         navOpen.toggleClass('active');
@@ -17,6 +19,10 @@ $(() => {
 
     close.click(function() {
         mobSidebar.removeClass('active');
+    });
+
+    selectOpen.click(function() {
+        selectActive.addClass('active');
     });
 
     $("[data-scroll]").on("click", function(event) {
