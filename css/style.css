@@ -361,6 +361,8 @@ hr {
 }
 
 .reviews__inner {
+    display: flex;
+    flex-direction: column;
     width: 86%;
     background: #FFFFFF;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -369,6 +371,7 @@ hr {
 }
 
 .reviews__text {
+    flex-grow: 1;
     position: relative;
     margin: 25px 0;
 }
@@ -735,6 +738,10 @@ hr {
 
 .active .select__hidden {
     display: block;
+}
+
+.inactive .select__hidden {
+    display: none;
 }
 
 .select__act {

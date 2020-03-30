@@ -32,6 +32,12 @@ $(() => {
         arrowDown.addClass('inactive');
     });
 
+    arrowUp.click(function() {
+        selectActive.removeClass('active');
+        selectActive.addClass('inactive');
+        arrowDown.removeClass('inactive');
+    });
+
     $("[data-scroll]").on("click", function(event) {
         event.preventDefault();
 
