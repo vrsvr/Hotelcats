@@ -3,9 +3,12 @@ $(() => {
     const mobMenu = $('#mob-menu');
     const mobSidebar = $('#mob-sidebar');
     const mobFilter = $('#mob-filter');
+    const catalogInner = $('#catalog-inner');
     const close = $('#close');
     const selectOpen = $('#select-open');
     const selectActive = $('#select-active');
+    const arrowUp = $('#arrow-up');
+    const arrowDown = $('#arrow-down');
 
     navOpen.click(function() {
         navOpen.toggleClass('active');
@@ -15,14 +18,18 @@ $(() => {
 
     mobFilter.click(function() {
         mobSidebar.addClass('active');
+        catalogInner.addClass('inactive');
     });
 
     close.click(function() {
         mobSidebar.removeClass('active');
+        catalogInner.removeClass('inactive');
     });
 
     selectOpen.click(function() {
         selectActive.addClass('active');
+        arrowUp.addClass('active');
+        arrowDown.addClass('inactive');
     });
 
     $("[data-scroll]").on("click", function(event) {

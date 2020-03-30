@@ -62,16 +62,30 @@
             <div class="catalog__btn">
                 <div>
                     <button class="catalog__filtr" id="mob-filter">
-            Фильтры
+            <svg class="filter__img" width="12" height="15" viewBox="0 0 12 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.5 8.68421L0 1.57895V0H12V1.57895L7.5 8.68421V13.4211L4.5 15V8.68421Z" fill="#1A212F" />
+            </svg>Фильтры
           </button>
                 </div>
 
                 <div class="select" id="select-open">
                     <div id="select-active">
+
                         <div class="select__act"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.5 1L1 3.35294M3.5 1L6 3.35294M3.5 1V11" stroke="#141312" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg> По площади</div>
+                <path d="M3.5 1L1 3.35294M3.5 1L6 3.35294M3.5 1V11" stroke="#141312" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg> По площади <svg class="select__down" id="arrow-down" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L13 1" stroke="#1A212F" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+                            <svg class="select__up" id="arrow-up" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 7L7 1L1 7" stroke="#1A212F" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+                        </div>
+
                         <div class="select__hidden"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.5 11L6 8.64706M3.5 11L1 8.64706M3.5 11L3.5 1" stroke="#141312" stroke-linecap="round"
                   stroke-linejoin="round" />
@@ -133,7 +147,7 @@
 
             </form>
 
-            <div class="catalog__inner">
+            <div class="catalog__inner" id="catalog-inner">
 
                 <div class="catalog__item">
                     <img class="catalog__img" src="img/catalog/1.png" alt="">
