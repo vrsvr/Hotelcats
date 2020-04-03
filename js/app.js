@@ -26,17 +26,11 @@ $(() => {
         catalogInner.removeClass('inactive');
     });
 
-    selectOpen.click(function() {
-        selectActive.addClass('active');
-        arrowUp.addClass('active');
-        arrowDown.addClass('inactive');
-    });
-
-    arrowUp.click(function() {
-        selectActive.removeClass('active');
-        selectActive.addClass('inactive');
-        arrowDown.removeClass('inactive');
-    });
+    // selectOpen.click(function() {
+    //     selectActive.toggleClass('active');
+    //     arrowUp.toggleClass('active');
+    //     arrowDown.toggleClass('inactive');
+    // });
 
     $("[data-scroll]").on("click", function(event) {
         event.preventDefault();
@@ -68,7 +62,6 @@ $(() => {
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                centerMode: true,
                 arrows: false,
             }
         }]
@@ -87,7 +80,6 @@ $(() => {
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                centerMode: true,
                 arrows: false
             }
         }]
