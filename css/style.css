@@ -258,7 +258,7 @@
   }
   
   .btn--orange {
-      margin: 10px auto;
+      margin: 10px 0 25px 0;
       color: #fff;
       background-color: #FF7236;
       border: 2px solid #fff;
@@ -581,6 +581,10 @@
           flex-direction: column;
           margin: 20px;
       }
+      .rooms__img {
+          width: 100%;
+          height: auto;
+      }
       .rooms__menu {
           position: inherit;
       }
@@ -857,6 +861,11 @@
       background: #FFFFFF;
       box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
       border-radius: 6px;
+  }
+  
+  .catalog__img {
+      width: 100%;
+      height: auto;
   }
   
   .catalog__content {
@@ -1150,8 +1159,11 @@
           display: none;
       }
       .catalog__item {
-          width: auto;
+          width: 100%;
           margin: 15px auto;
+      }
+      .catalog__content {
+          padding: 17px 25px;
       }
       .banner__inner {
           background: url('../img/mobile/free.jpg') center no-repeat;
